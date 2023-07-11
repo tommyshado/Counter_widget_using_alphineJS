@@ -13,15 +13,15 @@
     <body>
         
         <!-- here we are declaring the data using an object -->
-        <div x-data="{ count: 0 }">
+        <div x-data="counter">
             <!-- building a counter -->
             <h1 x-text="count"></h1>
             <!-- x-on:click is an event listener -->
             <!-- everytime we listen for an on:click event count variable will increment by one -->
 
-            <button @click="count++">Increment</button>
-            <button @click="count > 0 ? count-- : count = 0">Decrement</button>
-            <button @click="count *= 2">Power of 2</button>
+            <button @click="increment">Increment</button>
+            <button @click="decrement">Decrement</button>
+            <button @click="powersOf2">Power of 2</button>
             
             <!-- <span x-text="count"></span> -->
             <button @click="count = 0">reset</button>
@@ -29,6 +29,7 @@
 
     </body>
 
-    <script src="./mutliply.js"></script>
+    <script src="./counter.js"></script>
+    <script src="./index.js"></script>
 
 </html>
